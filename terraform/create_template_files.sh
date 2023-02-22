@@ -44,11 +44,11 @@ if [ ! -f backend.tf ]
 then
   echo "Create backend template file"
   cat > backend.tf <<- BACKEND
-terraform {
-  backend "remote" {
-    hostname = "app.terraform.io"
-  }
-}
+# terraform {
+#   backend "remote" {
+#     hostname = ""
+#   }
+# }
 BACKEND
 fi
 
