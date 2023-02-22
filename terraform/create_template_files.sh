@@ -57,6 +57,11 @@ mkdir -p tfvars && touch tfvars/main.tfvars
 
 echo "Create .gitignore file"
 cat > .gitignore <<- IGNORE
+.DS_Store
+.idea
 **/.terraform/**
-**/.terragrunt-cache/**
+*.tfstate*
+plan.out
+.terraform.lock.hcl
+secret.auto.tfvars
 IGNORE
